@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Ayakkabı görseli */
+    background-image: 
+      linear-gradient(
+        rgba(245, 150, 72, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url("https://plus.unsplash.com/premium_photo-1682435561654-20d84cef00eb?q=80&w=1018&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    height: 122px;
+    padding: 0 20px; /* SOLA YAKLAŞTI */
+}
+/* Stepify yazısı */
+/* Menü */
+.ust-menu{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Menü linkleri */
+.ust-menu a{
+    font-size: 22px;
+    color: white;
+    transition: all 0.4s ease;
+}
+.ust-menu a:hover{
+    color: rgb(255, 189, 91);
+    transform: translateY(-6px);
+}
+.ust-menu a:hover{
+    color: rgb(255, 189, 91);
+    transform: translateY(-6px);
+}
+
+.ust-menu a:hover{
+    color: rgb(255, 189, 91);
+    transform: translateY(-8px);
+}
+
+/* ================= HERO ALANI ================= */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px;
+}
+
+/* ================= AYAKKABI ================= */
+
+.ayakkabi{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.ayakkabi img{
+    height: 550px;
+    border-radius: 15px;
+    border: 5px solid black;
+    transition: all 0.5s ease;
+}
+
+.ayakkabi img:hover{
+    transform: scale(1.05);
+}
+
+/* ================= SAĞ TARAF (YAZILAR) ================= */
+
+.hero-text{
+    flex: 1;
+    color: white;
+}
+
+/* BAŞLIK */
+.hero-text h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+    background-color:transparent; /*linear-gradient(135deg, #ffc354, #5a1ccf);*/
+    padding: 15px 25px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+/* ================= MADDELER ================= */
+
+.slogan{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.slogan li{
+    font-size: 22px;
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: 12px;
+}
+
+/* ================= SEPET BUTONU ================= */
+
+.sepet{
+    margin-top: 20px;
+}
+
+.sepet button{
+    width: 220px;
+    height: 55px;
+    border-radius: 25px;
+    font-size: 22px;
+    background: linear-gradient(135deg, #ffc354, #5a1ccf);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+    transition: all 0.4s ease;
+}
+.brand{
+    color: white;
+    padding: 40px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer; 
+    transition: all 0.7s ease;
+    margin-left: -600px;
+}
+
+.sepet button:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.6);
+}
+
+.sepet button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px){
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text h1{
+        font-size: 36px;
+    }
+
+    .ayakkabi img{
+        height: 420px;
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 120px;
+    height: 75px;
+}
+footer h2{
+    font-size: 15px;
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepify | Contact </title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+     <header>
+    <div class="logo"></div>
+
+    <div class="brand">Stepify</div>
+
+    <div class="ust-menu">
+        <a href="index.html">Main Page</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="#">Contact</a>
+        <a href="latest.html">Latest</a>
+    </div>
+</header>
+<section class="contact-form">
+  <h1>Contact Us</h1>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+<script>
+  let angle = 0;
+
+  setInterval(() => {
+    angle += 0.1;
+    document.body.style.background = `
+      linear-gradient(
+        ${angle}deg,
+        rgb(255, 230, 200),
+        rgb(255, 200, 150),
+        rgb(255, 170, 110),
+        rgb(255, 240, 225)
+      )
+    `;
+  }, 60);
+</script>
+
+</body>
+</html>
